@@ -1,0 +1,8 @@
+<table class="boca" [ngClass]="equipo.nombre">
+    <tr *ngFor="let jugador of equipo.jugadores">
+        <td>{{jugador.nombre}}</td>
+        <td>
+            <button (click)="setArco(1, jugador.nombre)">Gol</button>
+        </td>
+    </tr>
+</table>
